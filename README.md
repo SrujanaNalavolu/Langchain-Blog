@@ -1,5 +1,6 @@
 # Langchain-Blog
 Mastering LangChain: A Deep Dive into the Modular Orchestration of LLMs
+
 1. Introduction: The Operating System for LLMs
 what is LangChain?
 LangChain is an open-source framework designed to simplify the creation of applications using LLMs. At its core, it is an orchestration layer. It allows developers to “chain” together different components — like databases, search engines, and multiple LLMs — to create complex, stateful sequences.
@@ -10,6 +11,8 @@ In the modern LLM ecosystem, models are “stateless” (they don’t remember p
 Orchestration: Managing the flow of data between multiple steps.
 Memory: Giving LLMs “long-term” or “short-term” context.
 Tool Integration: Allowing models to use calculators, APIs, or Google Search.
+
+
 2. Core Components: The Modular Building Blocks
 LangChain’s power lies in its modularity. Let’s break down the essential components with technical implementation details.
 
@@ -35,7 +38,6 @@ To build a RAG (Retrieval-Augmented Generation) system, you must convert unstruc
 
 3. Architecture Explanation
 The architecture of a LangChain application follows a “Cognitive Loop.” The model doesn’t just receive text; it processes it through a pipeline.
-
 The Logic Flow:
 User Input: The raw query.
 Prompt Construction: Input is formatted into a template with context.
